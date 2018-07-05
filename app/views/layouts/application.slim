@@ -1,0 +1,23 @@
+doctype html
+html
+
+  head
+    title Minion Line
+
+  body
+    header
+      .main
+        h1.storename Minion Line
+        h2.store The #1 Minion figurines store
+
+      .navbar
+        nav
+          ul
+            li
+              = link_to "Home",             'root_path'
+            li
+              = link_to "Shopping Cart",    'shopcart_path'
+            li
+              = link_to "Help",             'help_path'
+
+        = yield
