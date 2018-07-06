@@ -6,18 +6,24 @@ $pres-family: Helvetica;
 $nav-family: Helvetica;
 
 @mixin no-surroundings {
-  margin: 0;
+  margin: 5;
   padding: 0;
 };
 
-@mixin nav-button{
-  background-color: darken($main-color, 5%);
-  color: $nav-color;
-  font-family: $nav-family;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
+@mixin nav-buttons{
   display: inline-block;
+
+  a:link, a:visited{
+    background-color: darken($main-color, 5%);
+    color: $nav-color;
+    font-family: $nav-family;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+  }
+  a:hover, a:active{
+    background-color: darken($main-color, 8%);
+  }
 }
 
 body{
@@ -27,32 +33,32 @@ body{
 .main {
   background-color: $main-color;
   border-bottom: solid 5px darken($main-color, 10%);
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+
+  .storename{
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .storedescrip{
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .presentation{
   color:$pres-color;
   font-family: $pres-family;
-}
 
-.storename{
-  font-size: 48px;
-  text-align: center;
-  @include no-surroundings;
-}
-
-.storedescrip{
-  font-size: 20px;
-  text-align: center;
-  @include no-surroundings;
 }
 
 .navbar{
+  text-align: center;
+  padding-top: 1rem;
+
   .navlink{
-    a:link, a:visited{
-      @include nav-button;
-    }
-    a:hover, a:active{
-      background-color: darken($main-color, 8%);
-    }
+    @include nav-buttons;
   }
 }
