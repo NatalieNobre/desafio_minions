@@ -2,9 +2,9 @@ $main-color: #004999;
 $pres-color: #ffffff;
 $nav-color: #e5efff;
 
-$pres-family: Helvetica;
-$nav-family: Helvetica;
-$catalog-family: Helvetica;
+$pres-family: "Lucida Sans Unicode", sans-serif;
+$nav-family: "Lucida Sans Unicode", sans-serif;
+$catalog-family: "Lucida Grande", sans-serif;
 
 $navbutton-spacing: 1.5rem;
 
@@ -95,7 +95,7 @@ body{
   padding-right: 5rem;
 
   .catalogMessage{
-    color: darken($main-color, 20%);
+    color: darken($main-color, 15%);
     font-family: $catalog-family;
     padding: 1rem;
   }
