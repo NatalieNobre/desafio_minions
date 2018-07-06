@@ -85,5 +85,13 @@ body{
 
   .product{
     @include prod-img;
+
+    position: relative;
+
+    .prodcheck{
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
   }
 }
