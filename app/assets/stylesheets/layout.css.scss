@@ -6,6 +6,8 @@ $pres-family: Helvetica;
 $nav-family: Helvetica;
 $catalog-family: Helvetica;
 
+$navbutton-spacing: 1.5rem;
+
 @mixin no-surroundings {
   margin: 0.35rem;
   padding: 0rem;
@@ -18,8 +20,8 @@ $catalog-family: Helvetica;
     background-color: darken($main-color, 5%);
     color: $nav-color;
     font-family: $nav-family;
+    margin-left: $navbutton-spacing;
     padding: 1rem 1.8rem;
-    text-align: center;
     text-decoration: none;
   }
   a:hover, a:active{
@@ -34,6 +36,20 @@ $catalog-family: Helvetica;
     margin: 1.5rem;
     height: 9rem;
     width: 9rem;
+  }
+}
+
+@mixin eop-link{
+  display: inline-block;
+
+  a:link, a:visited{
+    color: $nav-color;
+    font-family: $nav-family;
+    padding: 1rem 1.8rem;
+    text-decoration: none;
+  }
+  a:hover, a:active{
+    color: darken($nav-color, 8%);
   }
 }
 
@@ -66,7 +82,7 @@ body{
 }
 
 .navbar{
-  text-align: center;
+  text-align: left;
   padding-top: 1rem;
 
   .navlink{
@@ -94,5 +110,23 @@ body{
       top: 1rem;
       left: 1rem;
     }
+  }
+
+  .submitcontainer{
+    text-align: center;
+
+    .prodsubmit{
+      margin-bottom: 3rem;
+      @include nav-button;
+    }
+  }
+}
+
+.bottombar{
+  background-color: $main-color;
+  padding: 2rem;
+
+  .bottomlink{
+    @include eop-link;
   }
 }

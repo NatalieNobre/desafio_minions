@@ -5,7 +5,7 @@ html
   body
     .catalog
       .catalogMessage
-        h2 Select your minions!
+        h2 Make your reservations:
         br
       .product
         = image_tag '001.jpg'
@@ -87,3 +87,7 @@ html
         .prodcheck
           = form_tag '/checkbox', method: :post do
             = check_box_tag 'flag', true, @flag
+
+      .submitcontainer
+        .prodsubmit
+          = link_to "Submit",             '/submitform'
