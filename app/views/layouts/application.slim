@@ -4,20 +4,21 @@ html
   head
     title Minion Line
 
+    = stylesheet_link_tag "layout"
+
   body
     header
       .main
-        h1.storename Minion Line
-        h2.store The #1 Minion figurines store
+        .presentation
+          h1.storename Minion Line
+          h2.storedescrip The #1 Minion figurines store
 
-      .navbar
-        nav
-          ul
-            li
-              = link_to "Home",             'root_path'
-            li
+        .navbar
+          nav
+            .navlink
+              = link_to "Home",             '/'
+            .navlink
               = link_to "Shopping Cart",    'shopcart_path'
-            li
+            .navlink
               = link_to "Help",             'help_path'
-
-        = yield
+          = yield

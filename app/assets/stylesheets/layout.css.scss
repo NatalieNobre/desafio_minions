@@ -1,0 +1,58 @@
+$main-color: #004999;
+$pres-color: #ffffff;
+$nav-color: #e5efff;
+
+$pres-family: Helvetica;
+$nav-family: Helvetica;
+
+@mixin no-surroundings {
+  margin: 0;
+  padding: 0;
+};
+
+@mixin nav-button{
+  background-color: darken($main-color, 5%);
+  color: $nav-color;
+  font-family: $nav-family;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+body{
+  @include no-surroundings;
+}
+
+.main {
+  background-color: $main-color;
+  border-bottom: solid 5px darken($main-color, 10%);
+}
+
+.presentation{
+  color:$pres-color;
+  font-family: $pres-family;
+}
+
+.storename{
+  font-size: 48px;
+  text-align: center;
+  @include no-surroundings;
+}
+
+.storedescrip{
+  font-size: 20px;
+  text-align: center;
+  @include no-surroundings;
+}
+
+.navbar{
+  .navlink{
+    a:link, a:visited{
+      @include nav-button;
+    }
+    a:hover, a:active{
+      background-color: darken($main-color, 8%);
+    }
+  }
+}
