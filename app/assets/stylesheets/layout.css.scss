@@ -6,6 +6,8 @@ $pres-family: "Lucida Sans Unicode", sans-serif;
 $nav-family: "Lucida Sans Unicode", sans-serif;
 $catalog-family: "Lucida Grande", sans-serif;
 
+$helpboxfamily: "Lucida Sans Unicode", sans-serif;
+
 $navbutton-spacing: 1.5rem;
 
 @mixin no-surroundings {
@@ -128,5 +130,24 @@ body{
 
   .bottomlink{
     @include eop-link;
+  }
+}
+
+.helpbox{
+  padding-top: 5rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
+  padding-bottom: 8rem;
+
+  .helpboxtitle{
+    text-align: center;
+    font-family: $helpboxfamily;
+    font-size: 1.5rem;
+  }
+
+  .helpboxmessage{
+    text-align: justify;
+    font-family: $helpboxfamily;
+    font-size: 1rem;
   }
 }
