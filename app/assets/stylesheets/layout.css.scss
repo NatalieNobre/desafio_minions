@@ -4,25 +4,36 @@ $nav-color: #e5efff;
 
 $pres-family: Helvetica;
 $nav-family: Helvetica;
+$catalog-family: Helvetica;
 
 @mixin no-surroundings {
-  margin: 5;
-  padding: 0;
+  margin: 0.35rem;
+  padding: 0rem;
 };
 
-@mixin nav-buttons{
+@mixin nav-button{
   display: inline-block;
 
   a:link, a:visited{
     background-color: darken($main-color, 5%);
     color: $nav-color;
     font-family: $nav-family;
-    padding: 14px 25px;
+    padding: 1rem 1.8rem;
     text-align: center;
     text-decoration: none;
   }
   a:hover, a:active{
     background-color: darken($main-color, 8%);
+  }
+}
+
+@mixin prod-img{
+  display: inline-block;
+
+  img{
+    margin: 1.5rem;
+    height: 9rem;
+    width: 9rem;
   }
 }
 
@@ -32,18 +43,18 @@ body{
 
 .main {
   background-color: $main-color;
-  border-bottom: solid 5px darken($main-color, 10%);
+  border-bottom: solid 0.35rem darken($main-color, 10%);
   padding-top: 3rem;
   padding-bottom: 1rem;
 
   .storename{
-    font-size: 48px;
+    font-size: 3.5rem;
     text-align: center;
-    margin: 0;
+    margin: 0rem;
   }
 
   .storedescrip{
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
@@ -59,6 +70,20 @@ body{
   padding-top: 1rem;
 
   .navlink{
-    @include nav-buttons;
+    @include nav-button;
+  }
+}
+
+.catalog{
+  padding: 5rem;
+
+  .catalogMessage{
+    color: darken($main-color, 20%);
+    font-family: $catalog-family;
+    padding: 1rem;
+  }
+
+  .product{
+    @include prod-img;
   }
 }
