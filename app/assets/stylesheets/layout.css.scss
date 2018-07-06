@@ -116,6 +116,7 @@ body{
 
   .submitcontainer{
     text-align: center;
+    padding-right: 1.4rem;
 
     .prodsubmit{
       margin-bottom: 3rem;
@@ -148,6 +149,16 @@ body{
   .helpboxmessage{
     text-align: justify;
     font-family: $helpboxfamily;
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .backhomecontainer{
+    text-align: center;
+    padding-right: 1.4rem;
+
+    .backhome{
+      margin: 3rem;
+      @include nav-button;
+    }
   }
 }
