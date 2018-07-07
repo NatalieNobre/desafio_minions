@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Buyername:
+  = @buyer.buyername
+p
+  strong Buyeremail:
+  = @buyer.buyeremail
+
+=> link_to 'Edit', edit_buyer_path(@buyer)
+'|
+=< link_to 'Back', buyers_path
