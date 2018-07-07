@@ -27,6 +27,8 @@ gem 'slim-rails'
 
 gem 'bootstrap-sass', '~> 2.3'
 
+gem 'pg', '0.20.0'
+
 # gem 'formtastic', '~> 3.0'
 
 # Use Redis adapter to run Action Cable in production
@@ -65,9 +67,9 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-group :production do
-  gem 'pg', '0.20.0'
-end
+# group :production do
+#  gem 'pg', '0.20.0'
+#end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
