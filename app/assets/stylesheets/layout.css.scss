@@ -31,16 +31,6 @@ $navbutton-spacing: 1.5rem;
   }
 }
 
-@mixin prod-img{
-  display: inline-block;
-
-  img{
-    margin: 1.5rem;
-    height: 9rem;
-    width: 9rem;
-  }
-}
-
 @mixin eop-link{
   display: inline-block;
 
@@ -103,24 +93,65 @@ body{
   }
 
   .product{
-    @include prod-img;
+    display: inline-block;
 
-    position: relative;
+    .prodImgContainer{
+      position: relative;
+      margin: 1.5rem;
+      height: 9rem;
+      width: 9rem;
+
+      img{
+        margin: 1.5rem;
+        height: 9rem;
+        width: 9rem;
+      }
+
+      .imgOverlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 1.5rem;
+        height: 9rem;
+        width: 9rem;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: white;
+
+        .overText {
+          color: darken($main-color, 15%);
+          font-family: $catalog-family;;
+          font-size: 1rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+        }
+      }
+    }
+
+    .prodImgContainer:hover .imgOverlay{
+      opacity: 0.6;
+    }
 
     .prodcheck{
       position: absolute;
       top: 1rem;
       left: 1rem;
     }
-  }
 
-  .submitcontainer{
-    text-align: center;
-    padding-right: 1.4rem;
+    .submitcontainer{
+      text-align: center;
+      padding-right: 1.4rem;
 
-    .prodsubmit{
-      margin-bottom: 3rem;
-      @include nav-button;
+      .prodsubmit{
+        margin-bottom: 3rem;
+        @include nav-button;
+      }
     }
   }
 }

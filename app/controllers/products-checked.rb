@@ -17,4 +17,5 @@ class Checkbox
     @flag015 = params[:flag015]
     @flag016 = params[:flag016]
   end
+
 end
