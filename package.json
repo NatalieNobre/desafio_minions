@@ -1,5 +1,13 @@
 {
   "name": "desafio_minions",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
+  "version": "1.0.0",
+  "description": "Minion figurines reservation app",
+  "main": "index.js",
+  "repository": "git@github.com:NatalieNobre/desafio_minions.git",
+  "author": "Natalie N. da Cunha",
+  "license": "MIT"
 }
