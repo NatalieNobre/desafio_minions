@@ -148,16 +148,18 @@ body{
 
 .buyerInfoContainer{
   .buyerInfo{
+
     .tag{
       color: darken($main-color, 15%);
       font-family: "Lucida Grande", sans-serif;
       font-size: 1.2rem;
-      margin-left: 34.2rem;
-      margin-right: 34.2rem;
+      margin-left: 35rem;
+      margin-right: 35rem;
       text-align: left;
     }
 
     .textBox{
+      input { font-size: 1rem; }
       text-align: center;
     }
   }
