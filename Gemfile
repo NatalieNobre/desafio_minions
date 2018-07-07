@@ -27,8 +27,6 @@ gem 'slim-rails'
 
 gem 'bootstrap-sass', '~> 2.3'
 
-gem 'pg'
-
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -47,6 +45,10 @@ group :development, :test do
   gem 'sqlite3', '1.3.13'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :production do
+  gem 'pg', '0.20.0'
 end
 
 group :development do
