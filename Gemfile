@@ -27,7 +27,7 @@ gem 'slim-rails'
 
 gem 'bootstrap-sass', '~> 2.3'
 
-gem 'pg', '0.20.0'
+gem 'pg'
 
 # gem 'formtastic', '~> 3.0'
 
