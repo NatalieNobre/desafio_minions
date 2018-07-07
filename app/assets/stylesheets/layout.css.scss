@@ -125,11 +125,13 @@ body{
           font-family: $catalog-family;;
           font-size: 1rem;
           position: absolute;
-          top: 50%;
-          left: 50%;
+          top: 2rem;
+          bottom: 2rem;
+          left: 2rem;
+          right: 2rem;
           transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
-          text-align: center;
+          text-align: justify;
         }
       }
     }
@@ -140,8 +142,8 @@ body{
 
     .prodcheck{
       position: absolute;
-      top: 1rem;
-      left: 1rem;
+      top: 0.8rem;
+      left: 0.8rem;
     }
 
     .submitcontainer{
