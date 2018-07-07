@@ -29,8 +29,6 @@ gem 'bootstrap-sass', '~> 2.3'
 
 gem 'pg'
 
-# gem 'formtastic', '~> 3.0'
-
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
