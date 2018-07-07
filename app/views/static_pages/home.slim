@@ -139,6 +139,21 @@ html
             .prodcheck
               = check_box_tag 'flag016', true, @flag016
 
-      .submitcontainer
-        .prodsubmit
-          = link_to "Submit",             '/submitform'
+    .buyerInfoContainer
+      .buyerInfo
+        .buyerName
+          .tag
+            p Name
+          .textBox
+            = text_area_tag 'name', nil, size: "50remx1rem", required: true
+        br
+        .buyerEmail
+          .tag
+            p E-mail
+          .textBox
+            = text_area_tag 'e-mail', nil, size: "50remx1rem", required: true
+    br
+
+    .submitcontainer
+      .prodsubmit
+        = link_to "Submit",             '/submitform'

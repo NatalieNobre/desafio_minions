@@ -5,6 +5,7 @@ $nav-color: #e5efff;
 $pres-family: "Lucida Sans Unicode", sans-serif;
 $nav-family: "Lucida Sans Unicode", sans-serif;
 $catalog-family: "Lucida Grande", sans-serif;
+$buyer-info-family: "Lucida Grande", sans-serif;
 
 $helpboxfamily: "Lucida Sans Unicode", sans-serif;
 
@@ -97,9 +98,6 @@ body{
 
     .prodImgContainer{
       position: relative;
-      margin: 1.5rem;
-      height: 9rem;
-      width: 9rem;
 
       img{
         margin: 1.5rem;
@@ -145,15 +143,22 @@ body{
       top: 0.8rem;
       left: 0.8rem;
     }
+  }
+}
 
-    .submitcontainer{
+.buyerInfoContainer{
+  .buyerInfo{
+    .tag{
+      color: darken($main-color, 15%);
+      font-family: "Lucida Grande", sans-serif;
+      font-size: 1.2rem;
+      margin-left: 34.2rem;
+      margin-right: 34.2rem;
+      text-align: left;
+    }
+
+    .textBox{
       text-align: center;
-      padding-right: 1.4rem;
-
-      .prodsubmit{
-        margin-bottom: 3rem;
-        @include nav-button;
-      }
     }
   }
 }
@@ -164,6 +169,17 @@ body{
 
   .bottomlink{
     @include eop-link;
+  }
+}
+
+.submitcontainer{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding-right: 1.4rem;
+
+  .prodsubmit{
+    @include nav-button;
   }
 }
 
