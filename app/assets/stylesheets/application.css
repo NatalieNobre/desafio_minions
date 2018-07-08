@@ -14,4 +14,5 @@
  *= require_self
  */
 
-@import "formtastic";
+= require formtastic
+= require my_formtastic_changes
