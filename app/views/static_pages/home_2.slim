@@ -1,0 +1,159 @@
+doctype html
+html
+  head
+    title Minion Line
+  body
+    .catalog
+      .catalogMessage
+        h2 Make your reservations:
+        br
+      .catalogProduct
+        = form_tag ('/reservation')
+
+        .product
+          .prodImgContainer
+            = image_tag '001.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag001', true
+        .product
+          .prodImgContainer
+            = image_tag '002.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag002', true
+        .product
+          .prodImgContainer
+            = image_tag '003.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag003', true
+        .product
+          .prodImgContainer
+            = image_tag '004.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag004', true
+        .product
+          .prodImgContainer
+            = image_tag '005.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag005', true
+        .product
+          .prodImgContainer
+            = image_tag '006.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag006', true
+        .product
+          .prodImgContainer
+            = image_tag '007.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag007', true
+        .product
+          .prodImgContainer
+            = image_tag '008.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag008', true
+        .product
+          .prodImgContainer
+            = image_tag '009.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag009', true
+        .product
+          .prodImgContainer
+            = image_tag '010.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag010', true
+        .product
+          .prodImgContainer
+            = image_tag '011.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag011', true
+        .product
+          .prodImgContainer
+            = image_tag '012.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag012', true
+        .product
+          .prodImgContainer
+            = image_tag '013.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag013', true
+        .product
+          .prodImgContainer
+            = image_tag '014.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag014', true
+        .product
+          .prodImgContainer
+            = image_tag '015.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag015', true
+        .product
+          .prodImgContainer
+            = image_tag '016.jpg'
+            .imgOverlay
+              .overText
+                p Nome Tamanho Preço
+            .prodcheck
+              = check_box_tag 'flag016', true
+
+        .buyerInfoContainer
+          .buyerInfo
+            .buyerName
+              .tag
+                p Name
+              .textBox
+                = text_field_tag 'name'
+            br
+            .buyerEmail
+              .tag
+                p E-mail
+              .textBox
+                = text_field_tag 'e-mail'
+        br
+
+        .submitcontainer
+          .prodsubmit
+            = submit_tag "Submit"
