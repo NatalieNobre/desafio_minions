@@ -7,9 +7,7 @@ Rails.application.routes.draw do
 
   get '/help' => 'static_pages#help'
 
-  get '/new' => 'reservations#new'
-
-  get '/create' => 'reservations#create'
+#  get '/new' => 'reservations#new'
 
 # Example of regular route:
 # get 'products/:id' => 'catalog#view'
