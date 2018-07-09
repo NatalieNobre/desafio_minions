@@ -3,8 +3,8 @@ html
   head
     title Minion Line
   body
-    .reservationForm
-      = form_tag '/checkbox', method: :post do
+    .reservations
+      = form_tag '/reservation', method: :post do
       .catalog
         .catalogMessage
           h2 Make your reservations:
@@ -17,7 +17,8 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'flag001', true, @flag001
+                = check_box_tag 'reservation[order][flag001]'
+/!                = check_box_tag 'flag001', true, @flag001
           .product
             .prodImgContainer
               = image_tag '002.jpg'
@@ -145,13 +146,15 @@ html
             .tag
               p Name
             .textBox
-              = text_field_tag 'name', nil, size: "50remx1rem", required: true
+              = text_field_tag 'reservation[name]', nil, size: "50remx1rem", required: true
+/!              = text_field_tag 'name', nil, size: "50remx1rem", required: true
           br
           .buyerEmail
             .tag
               p E-mail
             .textBox
-              = text_field_tag 'e-mail', nil, size: "50remx1rem", required: true
+              = text_field_tag 'reservation[email]', nil, size: "50remx1rem", required: true
+/!              = text_field_tag 'e-mail', nil, size: "50remx1rem", required: true
       br
 
       .submitcontainer
