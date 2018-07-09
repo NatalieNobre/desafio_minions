@@ -5,6 +5,10 @@ html
   body
     .reservationForm
       = form_tag '/checkbox', method: :post do
+  /!   Tentei mudar pra
+  /!  = form_tag '/reservation'
+  /!  E incluir as caixas de texto numa coisa só
+  /!  Mas some todos os produtos e as caixas de texto. Fica só o primeiro.
       .catalog
         .catalogMessage
           h2 Make your reservations:
@@ -18,6 +22,8 @@ html
                   p Nome Tamanho Preço
               .prodcheck
                 = check_box_tag 'flag001', true, @flag001
+/!               Tentei fazer
+/!               = check_box_tag 'reservation[flag001]'
           .product
             .prodImgContainer
               = image_tag '002.jpg'
@@ -146,6 +152,8 @@ html
               p Name
             .textBox
               = text_field_tag 'name', nil, size: "50remx1rem", required: true
+/!               Tentei fazer
+/!               = text_field_tag 'reservation[flag001]'
           br
           .buyerEmail
             .tag
