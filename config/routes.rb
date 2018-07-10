@@ -9,9 +9,10 @@ Rails.application.routes.draw do
 
   get '/help' => 'static_pages#help'
 
+#  get 'reservations/new' => 'reservations#new'
+
   post 'reservations/new' => 'reservations#new'
 
-  get 'reservations/new' => 'reservations#new'
 
 # Example of regular route:
 # get 'products/:id' => 'catalog#view'
