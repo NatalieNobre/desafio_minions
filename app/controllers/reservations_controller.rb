@@ -5,13 +5,9 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(params[:reservation])
-    if @reservation.save
+
+    @reservation.save
       redirect_to @reservation
-    else
-      # This line overrides the default rendering behavior, which
-      # would have been to render the "create" view.
-      render "new"
-    end
   end
 end
 

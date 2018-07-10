@@ -4,156 +4,156 @@ html
     title Minion Line
   body
     .reservationForm
-      = form_tag '/reservations', method: :post do
-      .catalog
-        .catalogMessage
-          h2 Make your reservations:
-          br
-        .catalogProduct
-          .product
-            .prodImgContainer
-              = image_tag '001.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag001]'
-          .product
-            .prodImgContainer
-              = image_tag '002.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag002]'
-          .product
-            .prodImgContainer
-              = image_tag '003.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag003]'
-          .product
-            .prodImgContainer
-              = image_tag '004.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag004]'
-          .product
-            .prodImgContainer
-              = image_tag '005.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag005]'
-          .product
-            .prodImgContainer
-              = image_tag '006.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag006]'
-          .product
-            .prodImgContainer
-              = image_tag '007.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag007]'
-          .product
-            .prodImgContainer
-              = image_tag '008.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag008]'
-          .product
-            .prodImgContainer
-              = image_tag '009.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag009]'
-          .product
-            .prodImgContainer
-              = image_tag '010.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag010]'
-          .product
-            .prodImgContainer
-              = image_tag '011.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag011]'
-          .product
-            .prodImgContainer
-              = image_tag '012.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag012]'
-          .product
-            .prodImgContainer
-              = image_tag '013.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag013]'
-          .product
-            .prodImgContainer
-              = image_tag '014.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag014]'
-          .product
-            .prodImgContainer
-              = image_tag '015.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag015]'
-          .product
-            .prodImgContainer
-              = image_tag '016.jpg'
-              .imgOverlay
-                .overText
-                  p Nome Tamanho Preço
-              .prodcheck
-                = check_box_tag 'reservation[flag016]'
+      = form_tag '/reservations/new', method: :post do
+        .catalog
+          .catalogMessage
+            h2 Make your reservations:
+            br
+          .catalogProduct
+            .product
+              .prodImgContainer
+                = image_tag '001.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag001]'
+            .product
+              .prodImgContainer
+                = image_tag '002.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag002]'
+            .product
+              .prodImgContainer
+                = image_tag '003.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag003]'
+            .product
+              .prodImgContainer
+                = image_tag '004.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag004]'
+            .product
+              .prodImgContainer
+                = image_tag '005.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag005]'
+            .product
+              .prodImgContainer
+                = image_tag '006.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag006]'
+            .product
+              .prodImgContainer
+                = image_tag '007.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag007]'
+            .product
+              .prodImgContainer
+                = image_tag '008.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag008]'
+            .product
+              .prodImgContainer
+                = image_tag '009.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag009]'
+            .product
+              .prodImgContainer
+                = image_tag '010.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag010]'
+            .product
+              .prodImgContainer
+                = image_tag '011.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag011]'
+            .product
+              .prodImgContainer
+                = image_tag '012.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag012]'
+            .product
+              .prodImgContainer
+                = image_tag '013.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag013]'
+            .product
+              .prodImgContainer
+                = image_tag '014.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag014]'
+            .product
+              .prodImgContainer
+                = image_tag '015.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag015]'
+            .product
+              .prodImgContainer
+                = image_tag '016.jpg'
+                .imgOverlay
+                  .overText
+                    p Nome Tamanho Preço
+                .prodcheck
+                  = check_box_tag 'reservation[flag016]'
 
-      .buyerInfoContainer
-        .buyerInfo
-          .buyerName
-            .tag
-              p Name
-            .textBox
-              = text_field_tag 'reservation[name]', nil, size: "50remx1rem"
-          br
-          .buyerEmail
-            .tag
-              p E-mail
-            .textBox
-              = text_field_tag 'reservation[email]', nil, size: "50remx1rem"
-      br
+        .buyerInfoContainer
+          .buyerInfo
+            .buyerName
+              .tag
+                p Name
+              .textBox
+                = text_field_tag 'reservation[name]', nil, size: "50remx1rem"
+            br
+            .buyerEmail
+              .tag
+                p E-mail
+              .textBox
+                = text_field_tag 'reservation[email]', nil, size: "50remx1rem"
+        br
 
-      .submitcontainer
-        .prodsubmit
-          = submit_tag 'Submit'
+        .submitcontainer
+          .prodsubmit
+            = submit_tag 'Submit'
