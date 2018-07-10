@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   post 'reservations/new' => 'reservations#new'
 
+  get 'reservations/new' => 'reservations#new'
+
 # Example of regular route:
 # get 'products/:id' => 'catalog#view'
 

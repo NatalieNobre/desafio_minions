@@ -1,10 +1,10 @@
 class ReservationMailer < ApplicationMailer
-  default from: 'notifications@example.com'
+  default from: 'natalienobre@gmail.com'
 
   def reservation_email
     @reservation = params[:reservation]
-    @url  = '/reservations/new'
-    mail(to: 'natalienobre@gmail.com' , subject: 'Minion Line: New Reservation')
+    @url  = 'reservations/new'
+    mail(to: 'natalienobre@poli.ufrj.br' , subject: 'Minion Line: New Reservation')
   end
 end
 
