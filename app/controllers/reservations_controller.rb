@@ -4,9 +4,9 @@ class ReservationsController < ApplicationController
   end
 
   def create
-    @client = Client.new(params[:client])
-    if @client.save
-      redirect_to @client
+    @reservation = Reservation.new(params[:reservation])
+    if @reservation.save
+      redirect_to @reservation
     else
       # This line overrides the default rendering behavior, which
       # would have been to render the "create" view.

@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flag001: false
+  flag002: false
+  flag003: false
+  flag004: false
+  flag005: false
+  flag006: false
+  flag007: false
+  flag008: false
+  flag009: false
+  flag010: false
+  flag011: false
+  flag012: false
+  flag013: false
+  flag014: false
+  flag015: false
+  flag016: false
+  name: MyText
+  email: MyText
+
+two:
+  flag001: false
+  flag002: false
+  flag003: false
+  flag004: false
+  flag005: false
+  flag006: false
+  flag007: false
+  flag008: false
+  flag009: false
+  flag010: false
+  flag011: false
+  flag012: false
+  flag013: false
+  flag014: false
+  flag015: false
+  flag016: false
+  name: MyText
+  email: MyText

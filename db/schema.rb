@@ -10,11 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_07_164642) do
+ActiveRecord::Schema.define(version: 2018_07_10_025107) do
 
   create_table "buyers", force: :cascade do |t|
     t.string "buyername"
     t.string "buyeremail"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.boolean "flag001"
+    t.boolean "flag002"
+    t.boolean "flag003"
+    t.boolean "flag004"
+    t.boolean "flag005"
+    t.boolean "flag006"
+    t.boolean "flag007"
+    t.boolean "flag008"
+    t.boolean "flag009"
+    t.boolean "flag010"
+    t.boolean "flag011"
+    t.boolean "flag012"
+    t.boolean "flag013"
+    t.boolean "flag014"
+    t.boolean "flag015"
+    t.boolean "flag016"
+    t.text "name"
+    t.text "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
