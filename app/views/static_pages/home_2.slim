@@ -4,7 +4,11 @@ html
     title Minion Line
   body
     .reservationForm
-      = form_tag '/reservations', method: :post do
+      = form_tag '/checkbox', method: :post do
+  /!   Tentei mudar pra
+  /!  = form_tag '/reservation'
+  /!  E incluir as caixas de texto numa coisa só
+  /!  Mas some todos os produtos e as caixas de texto. Fica só o primeiro.
       .catalog
         .catalogMessage
           h2 Make your reservations:
@@ -17,7 +21,9 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag001]'
+                = check_box_tag 'flag001', true, @flag001
+/!               Tentei fazer
+/!               = check_box_tag 'reservation[flag001]'
           .product
             .prodImgContainer
               = image_tag '002.jpg'
@@ -25,7 +31,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag002]'
+                = check_box_tag 'flag002', true, @flag002
           .product
             .prodImgContainer
               = image_tag '003.jpg'
@@ -33,7 +39,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag003]'
+                = check_box_tag 'flag003', true, @flag003
           .product
             .prodImgContainer
               = image_tag '004.jpg'
@@ -41,7 +47,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag004]'
+                = check_box_tag 'flag004', true, @flag004
           .product
             .prodImgContainer
               = image_tag '005.jpg'
@@ -49,7 +55,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag005]'
+                = check_box_tag 'flag005', true, @flag005
           .product
             .prodImgContainer
               = image_tag '006.jpg'
@@ -57,7 +63,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag006]'
+                = check_box_tag 'flag006', true, @flag006
           .product
             .prodImgContainer
               = image_tag '007.jpg'
@@ -65,7 +71,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag007]'
+                = check_box_tag 'flag007', true, @flag007
           .product
             .prodImgContainer
               = image_tag '008.jpg'
@@ -73,7 +79,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag008]'
+                = check_box_tag 'flag008', true, @flag008
           .product
             .prodImgContainer
               = image_tag '009.jpg'
@@ -81,7 +87,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag009]'
+                = check_box_tag 'flag009', true, @flag009
           .product
             .prodImgContainer
               = image_tag '010.jpg'
@@ -89,7 +95,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag010]'
+                = check_box_tag 'flag010', true, @flag010
           .product
             .prodImgContainer
               = image_tag '011.jpg'
@@ -97,7 +103,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag011]'
+                = check_box_tag 'flag011', true, @flag011
           .product
             .prodImgContainer
               = image_tag '012.jpg'
@@ -105,7 +111,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag012]'
+                = check_box_tag 'flag012', true, @flag012
           .product
             .prodImgContainer
               = image_tag '013.jpg'
@@ -113,7 +119,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag013]'
+                = check_box_tag 'flag013', true, @flag013
           .product
             .prodImgContainer
               = image_tag '014.jpg'
@@ -121,7 +127,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag014]'
+                = check_box_tag 'flag014', true, @flag014
           .product
             .prodImgContainer
               = image_tag '015.jpg'
@@ -129,7 +135,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag015]'
+                = check_box_tag 'flag015', true, @flag015
           .product
             .prodImgContainer
               = image_tag '016.jpg'
@@ -137,7 +143,7 @@ html
                 .overText
                   p Nome Tamanho Preço
               .prodcheck
-                = check_box_tag 'reservation[flag016]'
+                = check_box_tag 'flag016', true, @flag016
 
       .buyerInfoContainer
         .buyerInfo
@@ -145,13 +151,15 @@ html
             .tag
               p Name
             .textBox
-              = text_field_tag 'reservation[name]', nil, size: "50remx1rem"
+              = text_field_tag 'name', nil, size: "50remx1rem", required: true
+/!               Tentei fazer
+/!               = text_field_tag 'reservation[flag001]'
           br
           .buyerEmail
             .tag
               p E-mail
             .textBox
-              = text_field_tag 'reservation[email]', nil, size: "50remx1rem"
+              = text_field_tag 'e-mail', nil, size: "50remx1rem", required: true
       br
 
       .submitcontainer
