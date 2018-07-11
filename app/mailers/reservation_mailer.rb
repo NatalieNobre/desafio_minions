@@ -3,7 +3,7 @@ class ReservationMailer < ApplicationMailer
 
   def reservation_email
     @reservation = params[:reservation]
-    @url  = 'reservations/new'
+    @url  = '/reservations/new'
     mail(to: 'natalienobre@poli.ufrj.br' , subject: 'Minion Line: New Reservation')
   end
 end

@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
 #  get 'reservations/new' => 'reservations#new'
 
-  post 'reservations/new' => 'reservations#new'
+  post '/reservations/new' => 'reservations#new'
 
 
 # Example of regular route:
