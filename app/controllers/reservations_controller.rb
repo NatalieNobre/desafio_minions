@@ -8,7 +8,7 @@ class ReservationsController < ApplicationController
 #      format.html #{ redirect_to(@reservation, notice: 'Reservation was successful.') }
 #      format.json { render json: @reservation, status: :created, location: @reservation }
 
-    end
+#    end
 
   end
 
