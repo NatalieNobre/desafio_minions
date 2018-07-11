@@ -52,10 +52,12 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
-  ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = {
-    :address => "localhost",
-    :port => 1025 }
+#For Mailcatcher
+#  ActionMailer::Base.delivery_method = :smtp
+#  ActionMailer::Base.smtp_settings = {
+#    :address => "localhost",
+#    :port => 1025 }
+#  #  :domain => "/reservation/new" }
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
