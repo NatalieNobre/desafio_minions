@@ -2,7 +2,7 @@ class ReservationsController < ApplicationController
   def new
     @reservation = params[:reservation]
 
-#    ReservationMailer.with(reservation: @reservation).reservation_email.deliver_now
+    ReservationMailer.with(reservation: @reservation).reservation_email.deliver_now
 
   end
 
